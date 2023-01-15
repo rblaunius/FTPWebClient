@@ -1,4 +1,6 @@
-﻿namespace FTPWebClient.Forms
+﻿using xWinForms.xControls;
+
+namespace FTPWebClient.Forms
 {
     partial class Home
     {
@@ -29,24 +31,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            this.xToolbar1 = new xWinForms.xToolbar();
+            this.toolbar = new xWinForms.xControls.xToolbar();
+            this.homeuc1 = new FTPWebClient.UserControls.HomeUC();
             this.SuspendLayout();
             // 
-            // xToolbar1
+            // toolbar
             // 
-            resources.ApplyResources(this.xToolbar1, "xToolbar1");
-            this.xToolbar1.Name = "xToolbar1";
+            this.toolbar.BackColor = System.Drawing.Color.Transparent;
+            this.toolbar.curLocation = null;
+            resources.ApplyResources(this.toolbar, "toolbar");
+            this.toolbar.Name = "toolbar";
+            this.toolbar.ParentFrm = null;
+            this.toolbar.SettingsFrm = null;
+            // 
+            // homeuc1
+            // 
+            this.homeuc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.homeuc1, "homeuc1");
+            this.homeuc1.ForeColor = System.Drawing.Color.Black;
+            this.homeuc1.Name = "homeuc1";
             // 
             // Home
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.xToolbar1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ControlBox = false;
+            this.Controls.Add(this.homeuc1);
+            this.Controls.Add(this.toolbar);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.HelpButton = true;
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Home";
-            this.Opacity = 0.99D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Home_MouseClick);
             this.ResumeLayout(false);
@@ -55,6 +73,7 @@
 
         #endregion
 
-        private xWinForms.xToolbar xToolbar1;
+        private xToolbar toolbar;
+        private UserControls.HomeUC homeuc1;
     }
 }

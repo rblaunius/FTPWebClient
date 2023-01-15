@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace xWinForms.Editors
+namespace xWinForms.xEditors
 {
     public partial class TextEdit : UserControl
     {

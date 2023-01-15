@@ -2,14 +2,17 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FTPWebClient.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="Host" Type="System.String" Scope="User">
-      <Value Profile="(Default)">123.132.40.1</Value>
-    </Setting>
     <Setting Name="Login" Type="System.String" Scope="User">
       <Value Profile="(Default)">blaunius</Value>
     </Setting>
     <Setting Name="PW" Type="System.String" Scope="User">
       <Value Profile="(Default)">1*Co1311</Value>
+    </Setting>
+    <Setting Name="NotFoundFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FtpUploadFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/httpdocs</Value>
     </Setting>
   </Settings>
 </SettingsFile>

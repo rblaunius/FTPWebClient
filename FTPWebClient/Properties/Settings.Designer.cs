@@ -12,7 +12,7 @@ namespace FTPWebClient.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.2.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,18 +20,6 @@ namespace FTPWebClient.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("123.132.40.1")]
-        public string Host {
-            get {
-                return ((string)(this["Host"]));
-            }
-            set {
-                this["Host"] = value;
             }
         }
         
@@ -56,6 +44,30 @@ namespace FTPWebClient.Properties {
             }
             set {
                 this["PW"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NotFoundFile {
+            get {
+                return ((string)(this["NotFoundFile"]));
+            }
+            set {
+                this["NotFoundFile"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("/httpdocs")]
+        public string FtpUploadFolder {
+            get {
+                return ((string)(this["FtpUploadFolder"]));
+            }
+            set {
+                this["FtpUploadFolder"] = value;
             }
         }
     }

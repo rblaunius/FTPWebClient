@@ -1,0 +1,617 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAI
+        SgAACEoBc8yH/gAAAJBJREFUSEvt1NEJgzAUhWFH6CgdwRE6giN0lI7QkRzFDeKJeIMPP0dLiU/3wifh
+        BHKIiEMp5SeaST60dwZDR1Mf1Uj7DoZOlhEMnSwjGDpZRjB0/irTPGWROKSHKcpee9DT9uOO69XbjRfF
+        Ae9DZrXXGIurNFGWX2ODoZNlBEMnywiGzt1lX5nlQfsOhn2UYQUquD7k/M49NQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAdd.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btnAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 39</value>
+  </data>
+  <data name="btnAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 36</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnAdd.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
+    <value>btnAdd</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;btnAdd.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <metadata name="colEdit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colEdit.HeaderText" xml:space="preserve">
+    <value>     </value>
+  </data>
+  <data name="colEdit.MinimumWidth" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="colEdit.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <metadata name="ftpCredLocalBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 76</value>
+  </data>
+  <data name="dataGridView1.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 504</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="lblTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
+  </data>
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblTitle.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 55</value>
+  </data>
+  <data name="lblTitle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 36</value>
+  </data>
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>My Servers</value>
+  </data>
+  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
+    <value>lblTitle</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnDel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAI
+        SgAACEoBc8yH/gAAAG5JREFUSEu90LENwCAMAEFGygiMwAiMlFHZwOAIUn37IJ0E31i4RMQ1GC0YLRgt
+        GC0YLRgtGC0YLRgtGC0YLXmeZSz5svQzrO1ger9he2L+rlr+NZ7LDRgtGC0YLRgtGC0YLRgtGC0YLRgt
+        GB1RJl3B1uRdheWsAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnDel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btnDel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnDel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 39</value>
+  </data>
+  <data name="btnDel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 36</value>
+  </data>
+  <data name="btnDel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnDel.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;btnDel.Name" xml:space="preserve">
+    <value>btnDel</value>
+  </data>
+  <data name="&gt;&gt;btnDel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDel.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;btnDel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dataGridView2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 10</value>
+  </data>
+  <data name="dataGridView2.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 367</value>
+  </data>
+  <data name="dataGridView2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Name" xml:space="preserve">
+    <value>dataGridView2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnUploadFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnUploadFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUploadFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 311</value>
+  </data>
+  <data name="btnUploadFolder.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>326, 10000</value>
+  </data>
+  <data name="btnUploadFolder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>235, 23</value>
+  </data>
+  <data name="btnUploadFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 64</value>
+  </data>
+  <data name="btnUploadFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnUploadFolder.Text" xml:space="preserve">
+    <value>Delete all Files and Upload Folder Contents...</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.Name" xml:space="preserve">
+    <value>btnUploadFolder</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 242</value>
+  </data>
+  <data name="btnUpload.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>326, 10000</value>
+  </data>
+  <data name="btnUpload.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>235, 23</value>
+  </data>
+  <data name="btnUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 64</value>
+  </data>
+  <data name="btnUpload.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnUpload.Text" xml:space="preserve">
+    <value>Upload Placeholder</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.Name" xml:space="preserve">
+    <value>btnUpload</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnDeleteAndUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnDeleteAndUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDeleteAndUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 127</value>
+  </data>
+  <data name="btnDeleteAndUpload.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>326, 10000</value>
+  </data>
+  <data name="btnDeleteAndUpload.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>235, 23</value>
+  </data>
+  <data name="btnDeleteAndUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 110</value>
+  </data>
+  <data name="btnDeleteAndUpload.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnDeleteAndUpload.Text" xml:space="preserve">
+    <value>Delete All Files and Upload Placeholder</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.Name" xml:space="preserve">
+    <value>btnDeleteAndUpload</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnDelAllFiles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnDelAllFiles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDelAllFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 57</value>
+  </data>
+  <data name="btnDelAllFiles.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>326, 10000</value>
+  </data>
+  <data name="btnDelAllFiles.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>235, 23</value>
+  </data>
+  <data name="btnDelAllFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 64</value>
+  </data>
+  <data name="btnDelAllFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnDelAllFiles.Text" xml:space="preserve">
+    <value>Delete All Files</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.Name" xml:space="preserve">
+    <value>btnDelAllFiles</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnTest.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="btnTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="btnTest.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>326, 10000</value>
+  </data>
+  <data name="btnTest.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>235, 23</value>
+  </data>
+  <data name="btnTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 45</value>
+  </data>
+  <data name="btnTest.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnTest.Text" xml:space="preserve">
+    <value>Test Connection</value>
+  </data>
+  <data name="&gt;&gt;btnTest.Name" xml:space="preserve">
+    <value>btnTest</value>
+  </data>
+  <data name="&gt;&gt;btnTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTest.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnTest.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 386</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ctlMyServerInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ctlMyServerInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 36</value>
+  </data>
+  <data name="ctlMyServerInfo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>10000, 164</value>
+  </data>
+  <data name="ctlMyServerInfo.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>221, 164</value>
+  </data>
+  <data name="ctlMyServerInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 164</value>
+  </data>
+  <data name="ctlMyServerInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ctlMyServerInfo.Name" xml:space="preserve">
+    <value>ctlMyServerInfo</value>
+  </data>
+  <data name="&gt;&gt;ctlMyServerInfo.Type" xml:space="preserve">
+    <value>FTPWebClient.UserControls.MyServerInfo, FTPWebClient, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ctlMyServerInfo.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;ctlMyServerInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 55</value>
+  </data>
+  <data name="label1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="label1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 36</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>950, 586</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>282</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>970, 606</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colEdit.Name" xml:space="preserve">
+    <value>colEdit</value>
+  </data>
+  <data name="&gt;&gt;colEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewLinkColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ftpCredLocalBindingSource.Name" xml:space="preserve">
+    <value>ftpCredLocalBindingSource</value>
+  </data>
+  <data name="&gt;&gt;ftpCredLocalBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>HomeUC</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

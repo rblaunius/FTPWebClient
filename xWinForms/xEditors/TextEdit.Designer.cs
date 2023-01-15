@@ -1,4 +1,4 @@
-﻿namespace xWinForms.Editors
+﻿namespace xWinForms.xEditors
 {
     partial class TextEdit
     {
