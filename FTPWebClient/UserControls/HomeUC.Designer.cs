@@ -31,20 +31,26 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeUC));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEdit = new System.Windows.Forms.DataGridViewLinkColumn();
             this.ftpCredLocalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnDel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.pathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ftpDirectoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panelbuttons = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDelAllFiles = new System.Windows.Forms.Button();
+            this.btnDeleteAndUpload = new System.Windows.Forms.Button();
             this.btnUploadFolder = new System.Windows.Forms.Button();
             this.btnUpload = new System.Windows.Forms.Button();
-            this.btnDeleteAndUpload = new System.Windows.Forms.Button();
-            this.btnDelAllFiles = new System.Windows.Forms.Button();
             this.btnTest = new System.Windows.Forms.Button();
             this.ctlMyServerInfo = new FTPWebClient.UserControls.MyServerInfo();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,6 +62,9 @@
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftpDirectoryBindingSource)).BeginInit();
+            this.panelbuttons.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -84,7 +93,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nameDataGridViewTextBoxColumn,
+            this.colName,
             this.colEdit});
             this.dataGridView1.DataSource = this.ftpCredLocalBindingSource;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -105,13 +114,13 @@
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // nameDataGridViewTextBoxColumn
+            // colName
             // 
-            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colName.DataPropertyName = "name";
+            resources.ApplyResources(this.colName, "colName");
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
             // 
             // colEdit
             // 
@@ -129,7 +138,14 @@
             // 
             // ftpCredLocalBindingSource
             // 
-            this.ftpCredLocalBindingSource.DataSource = typeof(FTPWebClient.Models.FtpCredLocal);
+            this.ftpCredLocalBindingSource.DataSource = typeof(FTPManager.Models.FtpCredFAST);
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // splitContainer1
             // 
@@ -149,6 +165,7 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
+            this.splitContainer1.Panel2.Controls.Add(this.panelbuttons);
             this.splitContainer1.Panel2.Controls.Add(this.ctlMyServerInfo);
             this.splitContainer1.Panel2.Controls.Add(this.label1);
             // 
@@ -177,11 +194,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.dataGridView2);
-            this.panel1.Controls.Add(this.btnUploadFolder);
-            this.panel1.Controls.Add(this.btnUpload);
-            this.panel1.Controls.Add(this.btnDeleteAndUpload);
-            this.panel1.Controls.Add(this.btnDelAllFiles);
-            this.panel1.Controls.Add(this.btnTest);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -189,16 +201,21 @@
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
-            resources.ApplyResources(this.dataGridView2, "dataGridView2");
+            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView2.CausesValidation = false;
+            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pathDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.ftpDirectoryBindingSource;
+            resources.ApplyResources(this.dataGridView2, "dataGridView2");
             this.dataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(186)))), ((int)(((byte)(98)))));
@@ -210,6 +227,53 @@
             this.dataGridView2.ShowCellToolTips = false;
             this.dataGridView2.ShowEditingIcon = false;
             this.dataGridView2.ShowRowErrors = false;
+            // 
+            // pathDataGridViewTextBoxColumn
+            // 
+            this.pathDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.pathDataGridViewTextBoxColumn.DataPropertyName = "Path";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.pathDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.pathDataGridViewTextBoxColumn, "pathDataGridViewTextBoxColumn");
+            this.pathDataGridViewTextBoxColumn.Name = "pathDataGridViewTextBoxColumn";
+            // 
+            // ftpDirectoryBindingSource
+            // 
+            this.ftpDirectoryBindingSource.DataSource = typeof(FTPManager.Models.FtpDirectory);
+            // 
+            // panelbuttons
+            // 
+            this.panelbuttons.Controls.Add(this.panel2);
+            this.panelbuttons.Controls.Add(this.btnTest);
+            resources.ApplyResources(this.panelbuttons, "panelbuttons");
+            this.panelbuttons.Name = "panelbuttons";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnDelAllFiles);
+            this.panel2.Controls.Add(this.btnDeleteAndUpload);
+            this.panel2.Controls.Add(this.btnUploadFolder);
+            this.panel2.Controls.Add(this.btnUpload);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // btnDelAllFiles
+            // 
+            resources.ApplyResources(this.btnDelAllFiles, "btnDelAllFiles");
+            this.btnDelAllFiles.Name = "btnDelAllFiles";
+            this.btnDelAllFiles.UseVisualStyleBackColor = true;
+            this.btnDelAllFiles.Click += new System.EventHandler(this.btnDelAllFiles_Click);
+            // 
+            // btnDeleteAndUpload
+            // 
+            resources.ApplyResources(this.btnDeleteAndUpload, "btnDeleteAndUpload");
+            this.btnDeleteAndUpload.Name = "btnDeleteAndUpload";
+            this.btnDeleteAndUpload.UseVisualStyleBackColor = true;
+            this.btnDeleteAndUpload.Click += new System.EventHandler(this.btnDeleteAndUpload_Click);
             // 
             // btnUploadFolder
             // 
@@ -225,26 +289,12 @@
             this.btnUpload.UseVisualStyleBackColor = true;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
-            // btnDeleteAndUpload
-            // 
-            resources.ApplyResources(this.btnDeleteAndUpload, "btnDeleteAndUpload");
-            this.btnDeleteAndUpload.Name = "btnDeleteAndUpload";
-            this.btnDeleteAndUpload.UseVisualStyleBackColor = true;
-            this.btnDeleteAndUpload.Click += new System.EventHandler(this.btnDeleteAndUpload_Click);
-            // 
-            // btnDelAllFiles
-            // 
-            resources.ApplyResources(this.btnDelAllFiles, "btnDelAllFiles");
-            this.btnDelAllFiles.Name = "btnDelAllFiles";
-            this.btnDelAllFiles.UseVisualStyleBackColor = true;
-            this.btnDelAllFiles.Click += new System.EventHandler(this.btnDelAllFiles_Click);
-            // 
             // btnTest
             // 
             resources.ApplyResources(this.btnTest, "btnTest");
             this.btnTest.Name = "btnTest";
             this.btnTest.UseVisualStyleBackColor = true;
-            this.btnTest.Click += new System.EventHandler(this.btnGetFiles_Click);
+            this.btnTest.Click += new System.EventHandler(this.btnTestConnection_Click);
             // 
             // ctlMyServerInfo
             // 
@@ -277,6 +327,9 @@
             this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftpDirectoryBindingSource)).EndInit();
+            this.panelbuttons.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -298,6 +351,11 @@
         private Button btnDelAllFiles;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn colName;
         private DataGridViewLinkColumn colEdit;
+        private Panel panelbuttons;
+        private Panel panel2;
+        private BindingSource ftpDirectoryBindingSource;
+        private DataGridViewTextBoxColumn pathDataGridViewTextBoxColumn;
     }
 }

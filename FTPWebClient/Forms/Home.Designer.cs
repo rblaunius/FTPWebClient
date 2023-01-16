@@ -41,7 +41,7 @@ namespace FTPWebClient.Forms
             this.toolbar.curLocation = null;
             resources.ApplyResources(this.toolbar, "toolbar");
             this.toolbar.Name = "toolbar";
-            this.toolbar.ParentFrm = null;
+            this.toolbar.ParentFrm = this;
             this.toolbar.SettingsFrm = null;
             // 
             // homeuc1

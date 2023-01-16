@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageIcon>Artboard 1.png</PackageIcon>
@@ -25,13 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.10.18" />
-    <PackageReference Include="Avalonia.FreeDesktop" Version="0.10.18" />
     <PackageReference Include="DevExpress.Data" Version="22.2.3" />
     <PackageReference Include="DevExpress.Xpo" Version="22.2.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FTPManager\FTPManager.csproj" />
     <ProjectReference Include="..\xWinForms\xWinForms.csproj" />
   </ItemGroup>
 

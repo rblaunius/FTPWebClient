@@ -25,7 +25,7 @@ namespace FTPWebClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("blaunius")]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin")]
         public string Login {
             get {
                 return ((string)(this["Login"]));
@@ -37,7 +37,7 @@ namespace FTPWebClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1*Co1311")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string PW {
             get {
                 return ((string)(this["PW"]));

@@ -80,7 +80,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(383, 256);
+            this.panel1.Size = new System.Drawing.Size(441, 295);
             this.panel1.TabIndex = 0;
             // 
             // panel8
@@ -89,13 +89,13 @@
             this.panel8.Controls.Add(this.txtNotFoundFile);
             this.panel8.Controls.Add(this.label6);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 175);
+            this.panel8.Location = new System.Drawing.Point(0, 197);
             this.panel8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel8.MaximumSize = new System.Drawing.Size(0, 29);
             this.panel8.MinimumSize = new System.Drawing.Size(0, 29);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel8.Size = new System.Drawing.Size(383, 29);
+            this.panel8.Size = new System.Drawing.Size(441, 29);
             this.panel8.TabIndex = 0;
             // 
             // btnBrowse
@@ -104,11 +104,11 @@
             this.btnBrowse.BackColor = System.Drawing.Color.Transparent;
             this.btnBrowse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBrowse.Location = new System.Drawing.Point(355, 4);
+            this.btnBrowse.Location = new System.Drawing.Point(413, 4);
             this.btnBrowse.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(26, 24);
-            this.btnBrowse.TabIndex = 2;
+            this.btnBrowse.TabIndex = 7;
             this.btnBrowse.Text = "...";
             this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
@@ -122,8 +122,8 @@
             this.txtNotFoundFile.Location = new System.Drawing.Point(103, 5);
             this.txtNotFoundFile.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtNotFoundFile.Name = "txtNotFoundFile";
-            this.txtNotFoundFile.Size = new System.Drawing.Size(248, 23);
-            this.txtNotFoundFile.TabIndex = 1;
+            this.txtNotFoundFile.Size = new System.Drawing.Size(306, 23);
+            this.txtNotFoundFile.TabIndex = 6;
             this.toolTip1.SetToolTip(this.txtNotFoundFile, "If selected, this file will uploaded to the FTP to replace all other files in it." +
         "");
             // 
@@ -144,13 +144,13 @@
             this.panel6.Controls.Add(this.txtFolder);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 146);
+            this.panel6.Location = new System.Drawing.Point(0, 168);
             this.panel6.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel6.MaximumSize = new System.Drawing.Size(0, 29);
             this.panel6.MinimumSize = new System.Drawing.Size(0, 29);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel6.Size = new System.Drawing.Size(383, 29);
+            this.panel6.Size = new System.Drawing.Size(441, 29);
             this.panel6.TabIndex = 0;
             // 
             // txtFolder
@@ -160,8 +160,8 @@
             this.txtFolder.Location = new System.Drawing.Point(103, 5);
             this.txtFolder.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtFolder.Name = "txtFolder";
-            this.txtFolder.Size = new System.Drawing.Size(278, 23);
-            this.txtFolder.TabIndex = 1;
+            this.txtFolder.Size = new System.Drawing.Size(336, 23);
+            this.txtFolder.TabIndex = 5;
             this.toolTip1.SetToolTip(this.txtFolder, "The location of the folder to upload web files to on the FTP (ex: /httpdocs)");
             // 
             // label4
@@ -181,13 +181,13 @@
             this.panel5.Controls.Add(this.txtPW);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 117);
+            this.panel5.Location = new System.Drawing.Point(0, 139);
             this.panel5.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel5.MaximumSize = new System.Drawing.Size(0, 29);
             this.panel5.MinimumSize = new System.Drawing.Size(0, 29);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel5.Size = new System.Drawing.Size(383, 29);
+            this.panel5.Size = new System.Drawing.Size(441, 29);
             this.panel5.TabIndex = 0;
             // 
             // btnHShow
@@ -197,11 +197,12 @@
             this.btnHShow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHShow.BackgroundImage")));
             this.btnHShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHShow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHShow.Location = new System.Drawing.Point(355, 5);
+            this.btnHShow.Location = new System.Drawing.Point(413, 5);
             this.btnHShow.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnHShow.Name = "btnHShow";
             this.btnHShow.Size = new System.Drawing.Size(26, 24);
-            this.btnHShow.TabIndex = 2;
+            this.btnHShow.TabIndex = 10;
+            this.btnHShow.TabStop = false;
             this.btnHShow.UseVisualStyleBackColor = false;
             this.btnHShow.Click += new System.EventHandler(this.btnHShow_Click);
             this.btnHShow.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
@@ -214,8 +215,8 @@
             this.txtPW.Location = new System.Drawing.Point(103, 5);
             this.txtPW.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtPW.Name = "txtPW";
-            this.txtPW.Size = new System.Drawing.Size(248, 23);
-            this.txtPW.TabIndex = 1;
+            this.txtPW.Size = new System.Drawing.Size(306, 23);
+            this.txtPW.TabIndex = 4;
             this.txtPW.UseSystemPasswordChar = true;
             // 
             // label3
@@ -233,13 +234,13 @@
             this.panel4.Controls.Add(this.txtLogin);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 88);
+            this.panel4.Location = new System.Drawing.Point(0, 110);
             this.panel4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel4.MaximumSize = new System.Drawing.Size(0, 29);
             this.panel4.MinimumSize = new System.Drawing.Size(0, 29);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel4.Size = new System.Drawing.Size(383, 29);
+            this.panel4.Size = new System.Drawing.Size(441, 29);
             this.panel4.TabIndex = 0;
             // 
             // txtLogin
@@ -249,8 +250,8 @@
             this.txtLogin.Location = new System.Drawing.Point(103, 5);
             this.txtLogin.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(278, 23);
-            this.txtLogin.TabIndex = 1;
+            this.txtLogin.Size = new System.Drawing.Size(336, 23);
+            this.txtLogin.TabIndex = 3;
             // 
             // label2
             // 
@@ -267,13 +268,13 @@
             this.panel7.Controls.Add(this.txtName);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 59);
+            this.panel7.Location = new System.Drawing.Point(0, 81);
             this.panel7.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel7.MaximumSize = new System.Drawing.Size(0, 29);
             this.panel7.MinimumSize = new System.Drawing.Size(0, 29);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel7.Size = new System.Drawing.Size(383, 29);
+            this.panel7.Size = new System.Drawing.Size(441, 29);
             this.panel7.TabIndex = 0;
             // 
             // txtName
@@ -283,8 +284,8 @@
             this.txtName.Location = new System.Drawing.Point(103, 5);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(278, 23);
-            this.txtName.TabIndex = 1;
+            this.txtName.Size = new System.Drawing.Size(336, 23);
+            this.txtName.TabIndex = 2;
             // 
             // label5
             // 
@@ -301,13 +302,13 @@
             this.panel3.Controls.Add(this.txtIP);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 30);
+            this.panel3.Location = new System.Drawing.Point(0, 52);
             this.panel3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel3.MaximumSize = new System.Drawing.Size(0, 29);
             this.panel3.MinimumSize = new System.Drawing.Size(0, 29);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.panel3.Size = new System.Drawing.Size(383, 29);
+            this.panel3.Size = new System.Drawing.Size(441, 29);
             this.panel3.TabIndex = 0;
             // 
             // txtIP
@@ -317,7 +318,7 @@
             this.txtIP.Location = new System.Drawing.Point(103, 5);
             this.txtIP.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(278, 23);
+            this.txtIP.Size = new System.Drawing.Size(336, 23);
             this.txtIP.TabIndex = 1;
             // 
             // label1
@@ -332,15 +333,15 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.AutoSize = true;
             this.txtTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtTitle.Location = new System.Drawing.Point(0, 0);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 9);
-            this.txtTitle.Size = new System.Drawing.Size(196, 30);
+            this.txtTitle.Size = new System.Drawing.Size(441, 52);
             this.txtTitle.TabIndex = 1;
             this.txtTitle.Text = "Add New FTP Connection";
+            this.txtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -348,10 +349,10 @@
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(10, 221);
+            this.panel2.Location = new System.Drawing.Point(10, 260);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(383, 47);
+            this.panel2.Size = new System.Drawing.Size(441, 47);
             this.panel2.TabIndex = 1;
             // 
             // btnCancel
@@ -361,11 +362,11 @@
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCancel.Location = new System.Drawing.Point(2, 13);
+            this.btnCancel.Location = new System.Drawing.Point(4, 7);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(103, 30);
-            this.btnCancel.TabIndex = 0;
+            this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -376,11 +377,11 @@
             this.btnSave.BackColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(271, 13);
+            this.btnSave.Location = new System.Drawing.Point(326, 7);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(112, 30);
-            this.btnSave.TabIndex = 0;
+            this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -395,15 +396,16 @@
             // 
             // AddEditFTP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(158)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(405, 268);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(186)))), ((int)(((byte)(98)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(463, 307);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "AddEditFTP";
             this.Padding = new System.Windows.Forms.Padding(10, 12, 12, 0);
@@ -411,7 +413,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Load += new System.EventHandler(this.Settings_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);

@@ -1,15 +1,15 @@
 ﻿using DevExpress.Xpo;
 using System;
 
-namespace FTPManager.xpo
+namespace FTPManager.Models.xpo
 {
-    public class FtpCredentials : XPObject
+    public class FtpCredential : XPObject
     {
-        public FtpCredentials(Session session) : base(session) { }
+        public FtpCredential(Session session) : base(session) { }
 
-        public static FtpCredentials Create(UnitOfWork uow, string ftpHost, string path = "/", string userName = "", string pw = "")
+        public static FtpCredential Create(UnitOfWork uow, string ftpHost, string path = "/", string userName = "", string pw = "")
         {
-            FtpCredentials rtn = new FtpCredentials(uow)
+            FtpCredential rtn = new FtpCredential(uow)
             {
 
             };
@@ -18,6 +18,7 @@ namespace FTPManager.xpo
         }
 
 
+        string filesJson;
         string nickname;
         string notFoundFile;
         string password;
@@ -70,6 +71,14 @@ namespace FTPManager.xpo
         {
             get => notFoundFile;
             set => SetPropertyValue(nameof(NotFoundFile), ref notFoundFile, value);
+        }
+
+        
+        [Size(SizeAttribute.Unlimited)]
+        public string FilesJson
+        {
+            get => filesJson;
+            set => SetPropertyValue(nameof(FilesJson), ref filesJson, value);
         }
 
     }

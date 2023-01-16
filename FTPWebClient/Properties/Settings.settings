@@ -3,10 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="Login" Type="System.String" Scope="User">
-      <Value Profile="(Default)">blaunius</Value>
+      <Value Profile="(Default)">admin</Value>
     </Setting>
     <Setting Name="PW" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1*Co1311</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="NotFoundFile" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

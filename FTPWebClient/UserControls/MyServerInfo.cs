@@ -1,13 +1,5 @@
-﻿using FTPWebClient.Models.xpo;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using FTPManager;
+using FTPManager.Models.xpo;
 
 namespace FTPWebClient.UserControls
 {
@@ -28,14 +20,14 @@ namespace FTPWebClient.UserControls
             this.txtUplPath.Text = null;
         }
 
-        private FtpCredentials? rec;
-        public void LoadCredential(FtpCredentials row)
+        private FtpCredential rec;
+        public void LoadCredential(FtpCredential row)
         {
             rec = row;
             if (row != null)
             {
                 this.txtServerFTP.Text = row.FtpHost;
-                this.txtUserName.Text = XpoHelper.EncryptionEngine.Decrypt(row.UserName);
+                this.txtUserName.Text = EncryptionEngine.Decrypt(row.UserName);
                 this.txtPW.Text = "show";
                 this.txtContentFile.Text = row.NotFoundFile;
                 this.txtUplPath.Text = row.FileUploadPath;
@@ -48,7 +40,7 @@ namespace FTPWebClient.UserControls
             {
                 if (txtPW.Text == "show")
                 {
-                    this.txtPW.Text = XpoHelper.EncryptionEngine.Decrypt(rec.Password);
+                    this.txtPW.Text = EncryptionEngine.Decrypt(rec.Password);
                 }
                 else this.txtPW.Text = "show";
             }

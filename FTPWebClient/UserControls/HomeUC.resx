@@ -101,11 +101,11 @@
   <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+  <metadata name="colName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colName.HeaderText" xml:space="preserve">
     <value>Name</value>
-  </data>
-  <data name="nameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>15</value>
   </data>
   <metadata name="colEdit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -145,6 +145,12 @@
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -245,17 +251,20 @@
   <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="dataGridView2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="pathDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <metadata name="ftpDirectoryBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>216, 17</value>
+  </metadata>
+  <data name="dataGridView2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>340, 10</value>
-  </data>
-  <data name="dataGridView2.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Horizontal</value>
+    <value>10, 10</value>
   </data>
   <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 367</value>
+    <value>644, 187</value>
   </data>
   <data name="dataGridView2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -272,194 +281,17 @@
   <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnUploadFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnUploadFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnUploadFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 311</value>
-  </data>
-  <data name="btnUploadFolder.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>326, 10000</value>
-  </data>
-  <data name="btnUploadFolder.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>235, 23</value>
-  </data>
-  <data name="btnUploadFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 64</value>
-  </data>
-  <data name="btnUploadFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnUploadFolder.Text" xml:space="preserve">
-    <value>Delete all Files and Upload Folder Contents...</value>
-  </data>
-  <data name="&gt;&gt;btnUploadFolder.Name" xml:space="preserve">
-    <value>btnUploadFolder</value>
-  </data>
-  <data name="&gt;&gt;btnUploadFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnUploadFolder.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnUploadFolder.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btnUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnUpload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 242</value>
-  </data>
-  <data name="btnUpload.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>326, 10000</value>
-  </data>
-  <data name="btnUpload.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>235, 23</value>
-  </data>
-  <data name="btnUpload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 64</value>
-  </data>
-  <data name="btnUpload.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnUpload.Text" xml:space="preserve">
-    <value>Upload Placeholder</value>
-  </data>
-  <data name="&gt;&gt;btnUpload.Name" xml:space="preserve">
-    <value>btnUpload</value>
-  </data>
-  <data name="&gt;&gt;btnUpload.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnUpload.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnUpload.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnDeleteAndUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnDeleteAndUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDeleteAndUpload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 127</value>
-  </data>
-  <data name="btnDeleteAndUpload.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>326, 10000</value>
-  </data>
-  <data name="btnDeleteAndUpload.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>235, 23</value>
-  </data>
-  <data name="btnDeleteAndUpload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 110</value>
-  </data>
-  <data name="btnDeleteAndUpload.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnDeleteAndUpload.Text" xml:space="preserve">
-    <value>Delete All Files and Upload Placeholder</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAndUpload.Name" xml:space="preserve">
-    <value>btnDeleteAndUpload</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAndUpload.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAndUpload.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteAndUpload.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnDelAllFiles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnDelAllFiles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDelAllFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 57</value>
-  </data>
-  <data name="btnDelAllFiles.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>326, 10000</value>
-  </data>
-  <data name="btnDelAllFiles.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>235, 23</value>
-  </data>
-  <data name="btnDelAllFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 64</value>
-  </data>
-  <data name="btnDelAllFiles.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnDelAllFiles.Text" xml:space="preserve">
-    <value>Delete All Files</value>
-  </data>
-  <data name="&gt;&gt;btnDelAllFiles.Name" xml:space="preserve">
-    <value>btnDelAllFiles</value>
-  </data>
-  <data name="&gt;&gt;btnDelAllFiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDelAllFiles.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnDelAllFiles.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnTest.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="btnTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="btnTest.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>326, 10000</value>
-  </data>
-  <data name="btnTest.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>235, 23</value>
-  </data>
-  <data name="btnTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 45</value>
-  </data>
-  <data name="btnTest.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnTest.Text" xml:space="preserve">
-    <value>Test Connection</value>
-  </data>
-  <data name="&gt;&gt;btnTest.Name" xml:space="preserve">
-    <value>btnTest</value>
-  </data>
-  <data name="&gt;&gt;btnTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnTest.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnTest.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 200</value>
+    <value>0, 379</value>
+  </data>
+  <data name="panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>664, 386</value>
+    <value>664, 207</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -475,6 +307,207 @@
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnDelAllFiles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnDelAllFiles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDelAllFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 6</value>
+  </data>
+  <data name="btnDelAllFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 49</value>
+  </data>
+  <data name="btnDelAllFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnDelAllFiles.Text" xml:space="preserve">
+    <value>Delete All Files</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.Name" xml:space="preserve">
+    <value>btnDelAllFiles</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnDelAllFiles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnDeleteAndUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnDeleteAndUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDeleteAndUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="btnDeleteAndUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 49</value>
+  </data>
+  <data name="btnDeleteAndUpload.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnDeleteAndUpload.Text" xml:space="preserve">
+    <value>Delete All Files and Upload Placeholder</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.Name" xml:space="preserve">
+    <value>btnDeleteAndUpload</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteAndUpload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnUploadFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnUploadFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUploadFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>325, 61</value>
+  </data>
+  <data name="btnUploadFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 49</value>
+  </data>
+  <data name="btnUploadFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnUploadFolder.Text" xml:space="preserve">
+    <value>Delete all Files and Upload Folder Contents...</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.Name" xml:space="preserve">
+    <value>btnUploadFolder</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnUploadFolder.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnUpload.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnUpload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUpload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>325, 6</value>
+  </data>
+  <data name="btnUpload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 49</value>
+  </data>
+  <data name="btnUpload.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnUpload.Text" xml:space="preserve">
+    <value>Upload Placeholder</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.Name" xml:space="preserve">
+    <value>btnUpload</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnUpload.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 59</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>644, 110</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panelbuttons</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnTest.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btnTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="btnTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>644, 49</value>
+  </data>
+  <data name="btnTest.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnTest.Text" xml:space="preserve">
+    <value>Test Connection / Refresh Files</value>
+  </data>
+  <data name="&gt;&gt;btnTest.Name" xml:space="preserve">
+    <value>btnTest</value>
+  </data>
+  <data name="&gt;&gt;btnTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTest.Parent" xml:space="preserve">
+    <value>panelbuttons</value>
+  </data>
+  <data name="&gt;&gt;btnTest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelbuttons.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelbuttons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="panelbuttons.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="panelbuttons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 179</value>
+  </data>
+  <data name="panelbuttons.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panelbuttons.Name" xml:space="preserve">
+    <value>panelbuttons</value>
+  </data>
+  <data name="&gt;&gt;panelbuttons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelbuttons.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;panelbuttons.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="ctlMyServerInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -504,7 +537,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;ctlMyServerInfo.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -546,7 +579,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -590,10 +623,10 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>970, 606</value>
   </data>
-  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nameDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;colName.Name" xml:space="preserve">
+    <value>colName</value>
   </data>
-  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;colName.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;colEdit.Name" xml:space="preserve">
@@ -606,6 +639,24 @@
     <value>ftpCredLocalBindingSource</value>
   </data>
   <data name="&gt;&gt;ftpCredLocalBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>pathDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;pathDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ftpDirectoryBindingSource.Name" xml:space="preserve">
+    <value>ftpDirectoryBindingSource</value>
+  </data>
+  <data name="&gt;&gt;ftpDirectoryBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

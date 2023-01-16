@@ -40,7 +40,7 @@
             // txtMessage
             // 
             resources.ApplyResources(this.txtMessage, "txtMessage");
-            this.txtMessage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtMessage.ForeColor = System.Drawing.Color.White;
             this.txtMessage.Name = "txtMessage";
             // 
             // panel1
@@ -86,16 +86,17 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.Black;
             this.ControlBox = false;
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "xMessageBox";
-            this.Opacity = 0.95D;
+            this.Opacity = 0.88D;
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

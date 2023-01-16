@@ -1,6 +1,6 @@
 ﻿using DevExpress.Xpo;
 using DevExpress.Xpo.Metadata;
-using FTPManager.xpo;
+using FTPManager.Models.xpo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace FTPManager
             {
                 return new Type[]
                 {
-                    typeof(FtpCredentials)
+                    typeof(FtpCredential)
                 };
             }
         }
@@ -35,9 +35,9 @@ namespace FTPManager
             fullPath = Path.Combine(fullPath, $"{((typeof(XpoHelper).Namespace) == null ? "Data" : typeof(XpoHelper).Namespace)}{(iteration > 0 ? iteration : null)}.xml");
             return GetXmlConnectionString(fullPath);
         }
-        public static Connection Connect(string connectionString)
+        public static XmlDbConnection Connect(string connectionString)
         {
-            Connection rtn = Connection.Create(connectionString);
+            XmlDbConnection rtn = XmlDbConnection.Create(connectionString);
             if (!string.IsNullOrEmpty(rtn.ConStr))
             {
                 try
@@ -52,7 +52,7 @@ namespace FTPManager
                     uow.Dispose();
                     rtn.IsSuccessful = true;
                 }
-                catch (Exception x) { rtn.IsSuccessful = false; rtn.ErrMsg = x.Message; } 
+                catch (Exception x) { rtn.IsSuccessful = false; rtn.ErrMsg = x.Message; }
             }
             else
             {
@@ -61,96 +61,34 @@ namespace FTPManager
             }
             return rtn;
         }
-        public class Connection
+        public static bool CheckIfCredentialExists(string nickname, int excludeOid)
+        {
+            try
+            {
+                using (UnitOfWork uow = new UnitOfWork())
+                {
+                    return uow.Query<FtpCredential>().Where(x => x.Nickname == nickname && x.Oid != excludeOid).Any();
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public class XmlDbConnection
         {
             public bool IsSuccessful { get; internal set; }
-            public string? ConStr { get; internal set; }
-            public string? ErrMsg { get; internal set; }
-            static internal Connection Create(string conStr)
+            public string ConStr { get; internal set; }
+            public string ErrMsg { get; internal set; }
+            static internal XmlDbConnection Create(string conStr)
             {
-                return new Connection()
+                return new XmlDbConnection()
                 {
-                     IsSuccessful = false,
-                      ConStr = conStr,
-                }; 
+                    IsSuccessful = false,
+                    ConStr = conStr,
+                };
             }
 
-        }
-
-        public static class EncryptionEngine
-        {
-            public static string Encrypt(string plainText)
-            {
-                try
-                {
-                    if (!string.IsNullOrEmpty(plainText))
-                    {
-                        using (Aes aes = Aes.Create())
-                        {
-                            aes.KeySize = 256;
-                            aes.Key = Get256Key(key);
-                            aes.IV = new byte[16];
-                            ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
-                            using (MemoryStream mem = new MemoryStream())
-                            {
-                                using (CryptoStream c = new CryptoStream((Stream)mem, encryptor, CryptoStreamMode.Write))
-                                {
-                                    using (StreamWriter writer = new StreamWriter((Stream)c))
-                                    {
-                                        writer.Write(plainText);
-                                    }
-                                    plainText = Convert.ToBase64String(mem.ToArray());
-                                }
-                            }
-                        }
-                    }
-                }
-                catch { }
-                return plainText;
-            }
-            private static  string key = "xa;lsdkghklqwegbasklqyn78]";
-            public static string Decrypt(string cypherText)
-            {
-                try
-                {
-                    if (!string.IsNullOrEmpty(cypherText))
-                    {
-                        using (Aes aes = Aes.Create())
-                        {
-                            aes.KeySize = 256;
-                            aes.Key = Get256Key(key);
-                            aes.IV = new byte[16];
-                            ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);
-                            using (MemoryStream mem = new MemoryStream(Convert.FromBase64String(cypherText)))
-                            {
-                                using (CryptoStream c = new CryptoStream((Stream)mem, decryptor, CryptoStreamMode.Read))
-                                {
-                                    using (StreamReader read = new StreamReader((Stream)c))
-                                    {
-                                        return read.ReadToEnd();
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                catch { }
-                return cypherText;
-            }
-            private static byte[] Get256Key(string key)
-            {
-                byte[] rtn = new byte[32];
-                byte[] encoded = Encoding.UTF8.GetBytes(key);
-                for (int i = 0; i < encoded.Length; i++)
-                {
-                    if (i >= 32) break;
-                    else
-                    {
-                        rtn[i] = encoded[i];
-                    }
-                }
-                return rtn;
-            }
         }
     }
 }

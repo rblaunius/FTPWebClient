@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FTPWebClient.Models
+namespace FTPManager.Models
 {
-    public class FtpCredLocal
+    public class FtpCredFAST
     {
-        public string? Name { get; set; }
+        public string name { get; set; }
         public int oid { get; set; }
     }
 }
